@@ -73,3 +73,7 @@ Once connected to an MCP client:
 - Read a specific document: Use `read_doc` with filename like "principles.md"
 - Search for terms: Use `search_docs` with a query like "security"
 - Get document overview: Use `get_doc_summary`
+
+## Contributing
+
+Please review `CONTRIBUTING.md` for guidance on development workflow, commit conventions, and changelog expectations.

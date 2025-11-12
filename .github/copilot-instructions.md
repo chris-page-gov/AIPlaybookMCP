@@ -10,6 +10,7 @@
 - Build distributable with `npm run build` (runs `tsc`, outputs to `dist/`); run compiled server via `npm start` (node on `dist/index.js`).
 - Use `npm run dev` for hot execution through `tsx src/index.ts`; ideal for tweaking tool behavior.
 - Keep TypeScript strictness in mind (`strict: true`, `moduleResolution: "bundler"`); prefer ESM import paths ending in `.js` when targeting compiled output.
+- Log any user-facing change in `CHANGELOG.md` under `## [Unreleased]`, grouping entries beneath an appropriate `### Added/Changed/Fixed/Removed` heading.
 
 ## Architectural Cues
 - Server capabilities defined once in constructor; extend by appending new `Tool` objects inside the `ListToolsRequestSchema` handler and mirroring logic in the `CallToolRequestSchema` switch.
@@ -22,6 +23,7 @@
 - `write_doc` normalizes filenames to `.md` and blocks overwrites unless `overwrite: true`; reuse this guard when adding similar mutating tools.
 - Error messaging is user-facing (returned as tool output); craft clear strings instead of throwing.
 - Tests are not present; rely on manual invocation through an MCP client or `npm run dev` for validation.
+- Keep line endings as LF (see repository `.gitattributes`); do not convert docs to CRLF when editing.
 
 ## Extending the Server
 - To add search variants or analytics, reuse the line-oriented processing in `searchDocuments()`; it limits output to five matches per file plus a summary.
