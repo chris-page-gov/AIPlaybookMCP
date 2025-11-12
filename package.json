@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/index.ts",
+    "smoke": "node scripts/verify-mcp.mjs"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

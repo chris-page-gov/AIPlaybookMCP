@@ -16,6 +16,7 @@ Thanks for taking the time to improve AI Playbook MCP Server! These guidelines h
 ## Commits & Pull Requests
 - Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages; this keeps the history scannable and supports automated release tooling later.
 - Make sure CI scripts (`npm run build`) succeed before opening a pull request.
+- Run `npm run smoke` after building to ensure the MCP handshake still succeeds.
 - Include context in the PR description: what changed, why it was necessary, and how it was tested.
 
 ## Releasing

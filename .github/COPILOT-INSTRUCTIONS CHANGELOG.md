@@ -7,3 +7,4 @@ All notable changes to `.github/copilot-instructions.md` are recorded here.
 ### Added
 - Documented the requirement to update `CHANGELOG.md` for user-facing changes.
 - Noted the repository-wide LF line-ending policy to prevent inadvertent CRLF rewrites.
+- Highlighted `npm run smoke` as the standard handshake verification step.

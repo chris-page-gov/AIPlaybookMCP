@@ -11,6 +11,7 @@
 - Use `npm run dev` for hot execution through `tsx src/index.ts`; ideal for tweaking tool behavior.
 - Keep TypeScript strictness in mind (`strict: true`, `moduleResolution: "bundler"`); prefer ESM import paths ending in `.js` when targeting compiled output.
 - Log any user-facing change in `CHANGELOG.md` under `## [Unreleased]`, grouping entries beneath an appropriate `### Added/Changed/Fixed/Removed` heading.
+- Verify handshake health with `npm run smoke` after building or before shipping changes.
 
 ## Architectural Cues
 - Server capabilities defined once in constructor; extend by appending new `Tool` objects inside the `ListToolsRequestSchema` handler and mirroring logic in the `CallToolRequestSchema` switch.

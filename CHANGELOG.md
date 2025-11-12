@@ -8,3 +8,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) 
 
 ### Added
 - Documented changelog maintenance process and introduced the initial changelog scaffold.
+- Added repository overview, MCP usage guide, and context engineering assessment in `documentation/`.
+- Created root-level `code-change-recommendations.md` and `outstanding-checks.md` to track review findings.
+- Introduced `scripts/verify-mcp.mjs` and `npm run smoke` for automated MCP handshake verification.

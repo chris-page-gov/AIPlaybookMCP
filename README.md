@@ -35,6 +35,14 @@ For development:
 npm run dev
 ```
 
+### Smoke Test
+
+After building (`npm run build`), verify the compiled MCP server responds correctly:
+
+```bash
+npm run smoke
+```
+
 ## Usage with Claude Desktop
 
 Add this server to your Claude Desktop configuration:
