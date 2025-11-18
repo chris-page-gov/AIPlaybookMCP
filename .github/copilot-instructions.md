@@ -12,6 +12,7 @@
 - Keep TypeScript strictness in mind (`strict: true`, `moduleResolution: "bundler"`); prefer ESM import paths ending in `.js` when targeting compiled output.
 - Log any user-facing change in `CHANGELOG.md` under `## [Unreleased]`, grouping entries beneath an appropriate `### Added/Changed/Fixed/Removed` heading.
 - Verify handshake health with `npm run smoke` after building or before shipping changes.
+- Use `npm run interactive` when you need a quick CLI for issuing `list` and `call` requests during development.
 
 ## Architectural Cues
 - Server capabilities defined once in constructor; extend by appending new `Tool` objects inside the `ListToolsRequestSchema` handler and mirroring logic in the `CallToolRequestSchema` switch.

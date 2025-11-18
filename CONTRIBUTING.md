@@ -6,6 +6,7 @@ Thanks for taking the time to improve AI Playbook MCP Server! These guidelines h
 - Install dependencies with `npm install` and use `npm run dev` for the fastest iteration loop.
 - Keep changes compatible with the existing synchronous file I/O model in `src/index.ts` unless you plan a broader refactor.
 - Follow the project TypeScript conventions (`strict: true`, ESM imports ending in `.js` when they land in `dist/`).
+- Reach for `npm run interactive` when you need to exercise tools manually during development.
 
 ## Changelog Expectations
 - Every user-visible change (new tool behaviour, documentation updates, config changes, etc.) must add an entry under the `## [Unreleased]` section of `CHANGELOG.md`.

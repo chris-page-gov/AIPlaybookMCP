@@ -7,7 +7,7 @@ This document captures the current structure, purpose, and usage patterns of the
 - `docs/` – Canonical AI Playbook markdown corpus exposed through MCP tools.
 - `documentation/` – Internal project notes (development environment, repository overview, MCP usage guides).
 - `src/` – TypeScript source code for the MCP server (`index.ts`).
-- `scripts/` – Utility executables (e.g., `verify-mcp.mjs` smoke test harness).
+- `scripts/` – Utility executables (e.g., `verify-mcp.mjs` smoke harness, `interactive-mcp.mjs` exploratory CLI).
 - `.github/` – Copilot configuration and related change log.
 - `.devcontainer/` – Development container configuration (not yet documented).
 - `dist/` – Generated output directory after running `npm run build` (not tracked in Git).

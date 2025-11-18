@@ -56,3 +56,4 @@ Keeping output concise and making schema updates explicit will ensure MCP client
 
 - Run `npm run build` followed by `npm run smoke` to confirm the compiled server accepts `initialize` and responds to `tools/list`.
 - The smoke script (`scripts/verify-mcp.mjs`) can be wired into CI to guarantee handshake regressions are caught automatically.
+- Use `npm run interactive` for manual debugging; it spawns the server and provides a CLI for `list` and `call` requests with JSON arguments.

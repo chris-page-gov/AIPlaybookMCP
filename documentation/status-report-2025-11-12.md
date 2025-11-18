@@ -3,7 +3,8 @@
 ## Overview
 
 A documentation-focused review was completed covering repository structure, MCP integration, context engineering practices, and future improvements. No code paths were modified.
-- Added an automated smoke harness (`npm run smoke`) to exercise `initialize` and `tools/list` against the compiled server.
+- Added automated (`npm run smoke`) and interactive (`npm run interactive`) harnesses to exercise the compiled server.
+- Added automated (`npm run smoke`) and interactive (`npm run interactive`) harnesses to exercise the compiled server.
 
 ## Repository Structure & Usage
 

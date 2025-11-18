@@ -43,6 +43,20 @@ After building (`npm run build`), verify the compiled MCP server responds correc
 npm run smoke
 ```
 
+### Interactive CLI
+
+For ad-hoc exploration, launch the interactive client (spawns the compiled server, so build first):
+
+```bash
+npm run interactive
+```
+
+Commands available inside the prompt:
+
+- `list` – fetch the current tool list
+- `call <tool>` – run a tool; the client prompts for JSON arguments
+- `quit` – exit the session
+
 ## Usage with Claude Desktop
 
 Add this server to your Claude Desktop configuration:
